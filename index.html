@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <style>
+        .circle {
+            background-color: #761ef3;
+            stroke: #000;
+            stroke-width: 2px;
+            margin: 250px auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: pulse 11s ease 0s infinite normal forwards;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(.5);
+                background-color: #145e88;
+            }
+
+            50% {
+                transform: scale(2);
+                background-color: #15dfd5;
+            }
+
+            100% {
+                transform: scale(.5);
+                background-color: #145e88;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
